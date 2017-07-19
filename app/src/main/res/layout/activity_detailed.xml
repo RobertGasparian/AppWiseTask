@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.laptop.appwisetask.activities.DetailedActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/detailed_rv"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/edit_layout"
+
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_layout"
+        android:layout_alignParentBottom="true">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/category_edit"
+            android:maxLines="1"
+            android:hint="Enter Category"
+            android:layout_toLeftOf="@+id/add_item"
+            android:layout_marginRight="10dp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="add"
+            android:id="@+id/add_item"
+            android:layout_alignParentRight="true"
+
+            />
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
